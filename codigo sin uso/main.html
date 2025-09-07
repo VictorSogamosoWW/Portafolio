@@ -1,0 +1,109 @@
+<DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styles.css">
+        <title> Walter Web</title>
+    </head>
+
+    <header>
+            <nav class="navegacion">
+                <div class="hamburger">☰</div>
+                <div class="menu">
+                    <a class = "navegador" href="#sobre-mi">Sobre mi</a>                
+                    <a class = "navegador" href="#proyectos">Proyectos</a>
+                    <a class = "navegador" href="#contactos">Contactos</a>
+                </div>
+            </nav>
+    </header>
+
+    <body>
+
+        <div>
+            <div>
+                <h1>Victor David Sogamoso Loaiza</h1>
+                <h3>Walter Wolfgang</h3>
+            </div>
+        </div>
+
+        <main>
+
+            <section id="sobre-mi">
+                <div class ="imagen">
+                    <h2>Sobre mi</h2>
+                    <!-- Foto de perfil -->
+                    <img src="/imagenes/Walter_perfil.webp" alt="Foto de Walter">
+                    <h5>Walter Wolfgang</h5>
+                </div>
+
+                <!-- Biografia -->
+                <div>
+                    <p>Me llamo Victor, soy un desarrollador Fullstack en proceso.</p>
+                    <p>Me gusta aprender todo tipo de habilidades, soy un entusiasta por la pintura, la música y la biologia</p>
+                </div>
+
+                <!-- Habilidades -->
+                 <h4>Actualmente me encuentro estudiando</h4>
+
+                <ul>
+                    <li>HTML</li>
+                    <li>Python</li>
+                    <li>TypeScript</li>
+                    <li>PHP</li>
+                </ul>
+            </section>
+            
+            <section id="proyectos">
+                <div>
+                    <h2>Proyectos</h2>
+                    <select id="filtro-categoria">
+                        <option value="todas">Todas</option>
+                        <option value="frontend">Frontend</option>
+                        <option value="backend">Backend</option>
+                    </select>
+                </div>
+
+                <!-- Grid de proyectos -->
+                 <div>
+                    <!-- Tarjeta de proyectos -->
+                     <div data-categoria="web">
+                        <div>
+                            <img src="" alt="">
+                        </div>
+                     </div>
+                 </div>
+            </section>
+
+            <section id="contactos">
+                <h2>Contactame</h2>
+
+                <form id="formulario-contacto">
+                    <div class="contacto">
+                        <label class="etiqueta" for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+                    </div>
+                    <div class="contacto">
+                        <label class="etiqueta" for="e-mail">E-mail</label>
+                        <input type="text" id="e-mail" name="e-mail" placeholder="Escribe tu e-mail" required>
+                    </div>
+                    <div class="contacto">
+                        <label class="etiqueta" for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje" required></textarea>
+                    </div>
+                    <button class="contacto" type="submit">Enviar Mensaje</button>
+                </form>
+            </section>
+
+        </main>
+
+    </body>
+
+    <footer>
+        <p>2023 - Victor Sogamoso</p>
+    </footer>
+
+
+</html>

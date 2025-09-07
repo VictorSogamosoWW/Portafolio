@@ -1,0 +1,175 @@
+/* Header */
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    align-items: center;
+}
+
+header nav{
+    width: 100%;
+}
+
+header div.titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 100%;
+    background-color: lightgray;
+}
+
+header img{
+    max-height: 50%;
+    max-width: 100%;
+}
+
+header div div.presentacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+div.foto_perfil{
+    padding: 10%;
+}
+
+header nav div.menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: lightgray;
+}
+
+header nav div a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Body */
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}   
+
+/*Sobre mi*/
+
+body section#sobre_mi{
+    width: 100%;
+}
+
+body div.tarjeta_presentacion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/*Galeria*/
+body section#Galeria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+body div#galeria{  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider{
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    width: 80%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+}
+
+.slides {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slides img{
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.slides img.active{
+    display: block;
+}
+
+button.prev,
+button.next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+button.prev{
+    left: 10px;
+}
+
+button.next{
+    right: 10px;
+}
+
+/*Desarrollos*/
+body section#Desarrollos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+body div#desarrollos{  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Footer*/
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: left;
+    width: 100%;
+    background-color: lightgray;
+}
+
+h3.footer{
+    margin: 5px;
+    text-align: center;
+}
+
+/*Habilidades*/
+div#footer_habilidades{
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: left;
+    width: 100%;
+}

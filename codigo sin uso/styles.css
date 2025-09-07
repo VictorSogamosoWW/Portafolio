@@ -1,0 +1,134 @@
+h1{
+    text-align: center;
+    width: 100%;
+    margin: 2px;
+}
+h2{
+    text-align: center;
+    width: 100%;
+}
+h3{
+    text-align: center;
+    width: 100%;
+}
+h4{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 2px;
+}
+h5{
+    text-align: center;
+    margin: 2px;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.imagen{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navegador{
+    padding: 10px 20px;
+    background-color: aqua;
+    border: 2px solid rgb(98, 0, 255);
+    margin: 2px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+div{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+#sobre-mi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: right;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 25%;
+}
+
+.contactos{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.contacto{
+    padding: 0.3%;
+    display: flex;
+    justify-content: center;
+}
+.etiqueta{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Media para pantalas pequeñas*/
+
+header{
+    background-color: blueviolet;
+    width: 100%;
+}
+
+header.menu{
+    display: flex;
+    flex-direction: row;
+}
+
+header div.menu{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+    text-align: center;
+    width: 100%;
+}
+
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    header div.menu {
+        display: none; /* Ocultar menu en celulares */
+        flex-direction: column;
+        width: 100%;
+    }
+    .menu.active {
+        display: flex;
+    }
+    .hamburger {
+        display: block;
+    }
+}
