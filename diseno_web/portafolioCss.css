@@ -150,6 +150,22 @@ body div#desarrollos{
     align-items: center;
 }
 
+body div#desarrollos_imagenes{  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 5%;
+    width: 100%;
+}
+
+body div#desarrollos_imagenes img{
+    width: 20%;
+    height: 20%;
+    margin: 1%;
+}
+
 /*Contacto*/
 body section#Contacto {
     display: flex;
