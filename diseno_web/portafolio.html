@@ -98,6 +98,29 @@
                 <h1>Contacto</h1>
                 <p>Si desea contactar conmigo por alguna razon llene este formulario</p>
             </div>
+        
+            <div id="formulario_contacto">
+                <form id="formulario_contacto" method="post">
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+                </div>
+
+                <div class="btn_submit">
+                    <button type="submit">Enviar</button>
+                </div>
+            </div>
+        </form>
         </section>
         <script src="./portafolio.js"></script>
     </body>

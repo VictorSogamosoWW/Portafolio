@@ -150,6 +150,46 @@ body div#desarrollos{
     align-items: center;
 }
 
+/*Contacto*/
+body section#Contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+body div#contacto{  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form#formulario_contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+form div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1%;
+    width: 100%;
+}
+
+form div.btn_submit{
+    justify-content: center;
+}
+
+form div label{
+    text-align: right;
+}
+
 /*Footer*/
 footer{
     display: flex;
